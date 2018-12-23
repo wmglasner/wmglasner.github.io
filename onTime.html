@@ -1,0 +1,49 @@
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.screen').slick({
+        dots: false,
+  infinite: true,
+    autoplay: true,
+
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplaySpeed: 2200,
+  pauseOnHover: true
+      });
+    });
+  </script>
+
+</head>
+<body>
+<nav class="header">
+  <a href="index.html" class="intro">Warren Glasner</a>
+  <ul id='navbar'>
+    <li><a>Projects</a></li>
+    <li><a>About</a></li>
+    <li><a>Contact</a></li>
+  </ul>
+</nav>
+<h1 class=title>OnTime</h1>
+<div class="screen">
+  <div class="slideContainer"><img class="slide ontime" src="customization.jpg"></div>
+  <div class="slideContainer"><img class="slide ontime" src="dashboard.jpg"></div>
+  <div class="slideContainer"><img class="slide ontime" src="notification.jpg"></div>
+  <div class="slideContainer"><img class="slide ontime" src="preference.jpg"></div>
+  <div class="slideContainer"><img class="slide ontime" src="schedule.jpg"></div>
+</div>
+<p class="screen Text"> This four month project was focused
+   on improving Carnegie Mellon University's transportation
+    system experience. This was accomplished by investigating
+     current technologies in the market, various transit
+     processes, and then evaluating student and worker needs.
+     The solution we proposed is OnTime, a time management
+     application geared towards getting students to campus on time. </p>
+</body>

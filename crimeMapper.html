@@ -1,0 +1,43 @@
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.screen').slick({
+        dots: false,
+  infinite: true,
+    autoplay: true,
+
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplaySpeed: 2200,
+  pauseOnHover: true
+      });
+    });
+  </script>
+
+</head>
+<body>
+<nav class="header">
+  <a href="index.html" class="intro">Warren Glasner</a>
+  <ul id='navbar'>
+    <li><a>Projects</a></li>
+    <li><a>About</a></li>
+    <li><a>Contact</a></li>
+  </ul>
+</nav>
+<h1 class=title>Procedurally Mapping Crimes</h1>
+<div class="screen">
+  <div><img class="slide" src="crimeTracker2.png"></div>
+  <div><img class="slide" src="crimeTracker.png"></div>
+</div>
+<p class="screen Text"> This script procedurally generated
+  KML(Keyhole Markup Language), which is interpreted by Google
+  Earth to form pins on locations of crimes. It is able to determine
+  crimes by street, radius, and find the highest given density of crimes in a set.</p>
+</body>
