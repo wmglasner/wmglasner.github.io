@@ -103,8 +103,9 @@ body {
 }
 
 .ontime {
-  height: 85% !important;
-  width:90% !important;
+  padding-top: 40px;
+  height: 89% !important;
+  width:auto !important;
 }
 .slideContainer {
   text-align: center !important;
