@@ -1,5 +1,26 @@
 <head>
+  <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.screen').slick({
+        dots: false,
+  infinite: true,
+    autoplay: true,
+
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplaySpeed: 2200,
+  pauseOnHover: true
+      });
+    });
+  </script>
+
 </head>
 <nav class="header">
   <a href="#home" class="intro">Warren Glasner</a>
@@ -9,3 +30,20 @@
     <li><a>Contact</a></li>
   </ul>
 </nav>
+<h1 class=title>Chess Camp Web App</h1>
+<div class="screen">
+  <div><img class="slide" src="welcome.png"></div>
+  <div><img class="slide" src="jordan.png"></div>
+  <div><img class="slide" src="family.png"></div>
+  <div><img class="slide" src="cart.png"></div>
+    <div><img class="slide" src="camps.png"></div>
+</div>
+<p class="screen Text"> This web application is designed for facilitating
+registrations and instructor appointments for a chess
+camp. It features user profiles for both instructors and
+families, and a cart, checkout and payment system.
+It was built using Rails, Vue.js, and Materialize.css. </p>
+</body>
+<footer><p>Created by: Warren Glasner</p>
+  <p><a href="mailto:wmglasner@gmail.com">
+  Email</a><a href="linkedin.com/in/warrenglasner">LinkedIn</a></p></footer>
