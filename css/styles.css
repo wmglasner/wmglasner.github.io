@@ -96,8 +96,9 @@ body {
 }
 .slide {
   height: 95%;
-  width: 85%;
+  width: auto;
   margin: 20px 10px;
+  padding-bottom: 10px !important;
   display: inline-block !important;
 }
 
@@ -140,7 +141,8 @@ body {
   padding-left: 7%;
 }
 footer {
-  position: absolute;
+  position: fixed;
+  margin-top:20px;
   bottom: 0;
   width: 100%;
   height: 50px;
