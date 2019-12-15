@@ -1,0 +1,90 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  
+  </head>
+  <body>
+  <nav class="header">
+    <a href="index.html" class="intro">Warren Glasner</a>
+    <ul id='navbar'>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html">Projects</a></li>
+    </ul>
+  </nav>
+  <div class="embody">
+  <h1 class="title">Custom Small Form Factor PC Case</h1>
+  <p>This project utilized lasercut acrylic and basic arduino skills to build a small form factor pc
+      with programmed led patterns.
+  </p>
+  <video width="400" height="400" src="caseDemo.MOV" muted controls autoplay>
+    </video>
+    <h2 class="title">Fusion Sketching</h2>
+    <p>I have built a few computers in the past, or rather built one computer and continued to 
+        swap parts out sporadically as I saw fit. With each big iteration, I have downsized, from the 
+        full sized ATX standard, to micro ATX, to ITX (with a full size power supply).
+        This iteration features an SFX power supply, which has allowed me to downsize to an even greater degree.
+        I wanted to built a case that would be portable, taking up much less volume than my current case, which
+        stands at around 15 liters. The case I drafted, seen in the fusion sketch, has a volume 
+        of 5.7 liters.
+    </p>
+    <img id="proto" class="portTextPic" src="fusionSketch.png"/>
+
+    <h2 class="title">Hammering out the Details</h2>
+    <p>There are two key components involved in this pc apart from this case. The SFX power supply, and the 
+        ITX motherboard. I attempted to use premade assemblies for the items in question, howver I found them 
+        to be inaccurate. I had to make multiple cuts of the SFX PSU screwholes and power cable slot, which 
+        still ended up being a bit off.
+        Seen below are the screwholes and input/output slotting for both the motherboard and power supply (Motherboard
+        is currently unavailable. Distances and measurements taken from GrabCad STP and AsRock webpage.)
+    </p>
+    <img class="portTextPic" src="psu.jpg">
+    <img class="portTextPic" src="moboIO.jpg">
+    <img class="portTextPic" src="moboScrews.jpg">
+
+    <h2 class="title">Cutting and Joining</h2>
+    <p>I used a standard finger slot pattern. I attempted to play with sizing to get a press fitting, 
+        thereby bypassing kerf, however this resulted in a few cracked panels. I ended up using acrylic cement to 
+        join the case together. I was however able to press fit the emoticons onto the front panel of the case using 
+        a hammer. This took a few iterations and broken Pac Men; I discovered that the optimal kerf adjustment was about 
+        101.5-102% size increase for objects of that size.
+    </p>
+    <img class="portTextPic" src="ghost.jpg">
+    <img class="portTextPic" src="ghostEmpty.jpg">
+    <img class="portTextPic" src="panel.jpg">
+
+    <h2 class="title">Electronics</h2>
+    <p>Part of the motivation for a custom case was an issue arising in my current case. When asleep, the computer 
+        continued to flash lights into the night, and would not turn off. Using an arduino nano, and a few LEDs, 
+        I programmed a pattern of lights on the box. The arduino was housed on a 
+        breadboard stuck to the back of the panel. To signify the computer's sleeping state, after the sequence ran its course,
+        the lights turn off. When the motherboard arrives, the cases lights will run off of motherboard power,
+        rather than an external supply.
+    </p>
+    <img class="portTextPic" src="lighting.jpg">
+
+
+    <h2 class="title">Assembled</h2>
+
+    <p> This was a really fun project, one that I had wanted to do for a while. I am very satisfied with how it turned out,
+        and fully intend to iterate upon this design, and use it. The case is perfect for my current living situation; as a college student,
+        saving space in my room is imperative, and being able to carry a powerful computer in my backpack is extremely convienient.
+        <br />
+        <br />
+        Had I had more time, there were a few tweaks I would have made. Firstly, rather than having to pry open the front plate,
+        I would have implemented T-slotting with screws and bolts, such that I could tighten and untighten the case with a screwdriver. 
+        I was also interested in building a collapsable handle, such that the computer case could be carried around with ease. In terms of aesthetics,
+        I had an idea to make the entire front plate one big pacman game, but felt that I should focus on form first, and found myself
+        without time towards the end.
+    </p>
+    <img class="portTextPic" src="finalCase.jpg">
+    
+                
+    </div>
+    
+  </body>
+  <footer></footer>
